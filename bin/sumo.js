@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 
-var sumo = require('..');
+var sumo = require('..')({
+  user: process.env.SUMOLOGIC_USER,
+  pass: process.env.SUMOLOGIC_PASS
+});
+
 var args = require('minimist')(process.argv.slice(2));
 
 var query = args._[0];

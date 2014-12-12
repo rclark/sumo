@@ -1,0 +1,15 @@
+{
+  "name": "sumo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "sumo": "bin/sumo.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.1.0",
+    "request": "^2.51.0"
+  }
+}

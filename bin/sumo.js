@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 var sumo = require('..')({
-  user: process.env.SUMOLOGIC_USER,
-  pass: process.env.SUMOLOGIC_PASS
+  user: process.env.MAPBOX_CLI_SUMOLOGIC_USER,
+  pass: process.env.MAPBOX_CLI_SUMOLOGIC_PASS
 });
 
 var args = require('minimist')(process.argv.slice(2));

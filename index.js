@@ -1,9 +1,8 @@
 var request = require('request');
 
-
 module.exports = function(auth) {
   return function(query, options, callback) {
-    var qs = { q: query };
+    var qs = { q: query || '' };
 
     if (options.service)
       qs.q = [ '_collector=*', options.service, '*' ].join('') + ' ' + qs.q;
